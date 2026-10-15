@@ -39,7 +39,19 @@
   outline: 1px solid #2A1B14; outline-offset: 4px;
 }
 
+/* Photography */
+.img-frame { overflow: hidden; background: #EBD9C8; }
+.img-frame img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  filter: saturate(.82) sepia(.12) contrast(1.02);
+  transform: scale(1.08);
+  transition: transform 1.8s cubic-bezier(.16, 1, .3, 1);
+}
+.reveal-on-scroll.is-visible .img-frame img { transform: scale(1); }
+#spec-drawer .img-frame img { transform: scale(1.1); }
+#spec-drawer.open .img-frame img { transform: scale(1); }
+
 @media (prefers-reduced-motion: reduce) {
   .status-dot.open, .animate-marquee { animation: none; }
-  #spec-drawer, #spec-backdrop, .reveal-on-scroll { transition-duration: .01s; }
+  #spec-drawer, #spec-backdrop, .reveal-on-scroll, .img-frame img { transition-duration: .01s; }
 }

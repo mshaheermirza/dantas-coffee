@@ -1,0 +1,41 @@
+/* soft page entrance (failsafe: shows after 3s even if JS fails) */
+body { transition: opacity .9s ease; }
+html.pre body { opacity: 0; animation: preFailsafe .01s 3s forwards; }
+@keyframes preFailsafe { to { opacity: 1; } }
+
+/* hand-off from CSS reveal to GSAP */
+.gsap-on .reveal-on-scroll { opacity: 1; transform: none; transition: none; }
+.gsap-on .reveal-on-scroll .img-frame img { transition: none; }
+
+/* photos: cheap warm tint instead of a per-frame filter */
+.img-frame { position: relative; }
+.img-frame::after {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: rgba(235, 217, 200, .10);
+}
+.img-frame img { filter: none; will-change: transform; }
+
+/* type masks */
+.mask { display: block; overflow: hidden; padding: 0 .08em .14em; margin: 0 -.08em -.14em; }
+.mask-in { display: block; will-change: transform; }
+
+/* nav underline draw */
+nav a { position: relative; }
+nav a::after {
+  content: ''; position: absolute; left: 0; bottom: -8px; width: 100%; height: 1px;
+  background: #B85435; transform: scaleX(0); transform-origin: right;
+  transition: transform .7s cubic-bezier(.16, 1, .3, 1);
+}
+nav a:hover::after { transform: scaleX(1); transform-origin: left; }
+
+/* scroll progress */
+#progress {
+  position: absolute; left: 0; bottom: -1px; width: 100%; height: 1px;
+  background: #B85435; transform: scaleX(0); transform-origin: left; pointer-events: none;
+}
+
+/* Lenis */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+.lenis [data-lenis-prevent] { overscroll-behavior: contain; }
