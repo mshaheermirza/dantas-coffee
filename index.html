@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Danta's Coffee — Specialty Roastery & Cafe in Leuven</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/js/tailwind.config.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="bg-parchment text-espresso font-sans antialiased overflow-x-hidden">
+
+  <!-- TICKER (Roast) -->
+  <div class="bg-roast text-parchment text-[9px] tracking-[0.35em] uppercase py-3 overflow-hidden whitespace-nowrap font-light border-b border-parchment/10">
+    <div class="animate-marquee">
+      <div class="flex items-center justify-around w-full">
+        <span>High-Altitude Guatemalan Origin</span><span>—</span>
+        <span>Rector de Somerplein 15, Leuven</span><span>—</span>
+        <span>Architectural Roastery & Bar</span><span>—</span>
+        <span>Cardamom & Honey Infusions</span><span>—</span>
+      </div>
+      <div class="flex items-center justify-around w-full" aria-hidden="true">
+        <span>High-Altitude Guatemalan Origin</span><span>—</span>
+        <span>Rector de Somerplein 15, Leuven</span><span>—</span>
+        <span>Architectural Roastery & Bar</span><span>—</span>
+        <span>Cardamom & Honey Infusions</span><span>—</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 bg-parchment/90 backdrop-blur-md border-b border-espresso/10">
+    <div class="max-w-7xl mx-auto px-8 md:px-20 py-8 flex items-center justify-between gap-8">
+      <a href="#" class="group whitespace-nowrap">
+        <span class="font-serif font-normal text-lg tracking-wider text-espresso block">DANTA'S COFFEE</span>
+        <span class="text-[8px] tracking-[0.4em] uppercase text-roast block mt-1 font-light">Leuven • Est. 2026</span>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-10 xl:gap-14 text-[11px] uppercase tracking-[0.3em] font-light text-roast">
+        <a href="#story" class="hover:text-terracotta transition duration-500">Origin</a>
+        <a href="#signatures" class="hover:text-terracotta transition duration-500">Signatures</a>
+        <a href="#menu" class="hover:text-terracotta transition duration-500">Catalog</a>
+        <a href="#visit" class="hover:text-terracotta transition duration-500">Location</a>
+      </nav>
+
+      <div class="flex items-center gap-10">
+        <div id="store-status" class="hidden sm:flex items-center gap-3 whitespace-nowrap text-[9px] uppercase tracking-[0.3em] font-light text-roast" role="status" aria-live="polite">
+          <span id="status-dot" class="status-dot"></span>
+          <span id="status-label">—</span>
+          <span class="w-px h-3 bg-espresso/20"></span>
+          <span id="status-sub" class="text-roast/60">—</span>
+        </div>
+        <a href="#visit" class="whitespace-nowrap text-[10px] uppercase tracking-[0.25em] font-medium text-espresso border-b border-espresso pb-0.5 hover:text-terracotta hover:border-terracotta transition duration-500">
+          Inquire / Visit
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO (Parchment) -->
+  <section class="py-32 md:py-48 max-w-7xl mx-auto px-8 md:px-20 reveal-on-scroll">
+    <div class="grid lg:grid-cols-12 gap-16 items-end">
+      <div class="lg:col-span-9 space-y-10">
+        <span class="text-[10px] uppercase tracking-[0.35em] text-terracotta font-light block">Specialty Roastery & Bar</span>
+        <h1 class="font-serif text-5xl md:text-8xl font-normal text-espresso leading-[1.05] tracking-tight">
+          Chocolate depth. <br />
+          <span class="italic font-light text-terracotta">Bright fruit notes.</span> <br />
+          Absolute restraint.
+        </h1>
+        <p class="text-roast text-base md:text-lg font-light leading-relaxed max-w-2xl pt-4">
+          Every extraction at Danta's is an exercise in purity. High-altitude Guatemalan beans, precision water profiles, and rare regional spice infusions delivered in an uncompromised spatial experience.
+        </p>
+      </div>
+      <div class="lg:col-span-3 border-l border-cardamom pl-8 space-y-8 text-[11px] text-roast font-light hidden lg:block">
+        <div><strong class="block text-cardamom uppercase tracking-[0.25em] text-[9px] mb-1 font-medium">Terroir</strong>Volcanic highlands of Guatemala.</div>
+        <div><strong class="block text-cardamom uppercase tracking-[0.25em] text-[9px] mb-1 font-medium">Philosophy</strong>Honoring the unseen labor of coffee farmers.</div>
+        <div><strong class="block text-cardamom uppercase tracking-[0.25em] text-[9px] mb-1 font-medium">Coordinates</strong>Rector de Somerplein 15, Leuven</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY (Espresso) -->
+  <section id="story" class="bg-espresso text-parchment py-36 md:py-48 reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-8 md:px-20">
+      <div class="max-w-2xl mb-28">
+        <span class="text-[9px] uppercase tracking-[0.35em] text-mayaGold font-light block mb-4">Origins & Vision</span>
+        <h2 class="font-serif text-4xl md:text-6xl font-normal leading-[1.15]">Rooted in volcanic soil. <span class="italic font-light text-mayaGold">Poured in European silence.</span></h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-20 border-t border-mayaGold/50 pt-20">
+        <div class="space-y-6">
+          <span class="text-mayaGold font-serif text-lg font-light">01</span>
+          <h3 class="font-serif text-2xl font-normal tracking-tight">The Plant</h3>
+          <p class="text-parchment/60 text-sm leading-relaxed font-light">Raised among coffee vegetation in Guatemala, the true capacity of the seed remained unrevealed until rigorous roasting and extraction sciences were mastered.</p>
+        </div>
+        <div class="space-y-6">
+          <span class="text-mayaGold font-serif text-lg font-light">02</span>
+          <h3 class="font-serif text-2xl font-normal tracking-tight">The European Shift</h3>
+          <p class="text-parchment/60 text-sm leading-relaxed font-light">Relocating for Economics studies, I discovered Europe's reverence for the cup. Treasures like native cardamom (99% exported) found their true ritual here in Belgium.</p>
+        </div>
+        <div class="space-y-6">
+          <span class="text-mayaGold font-serif text-lg font-light">03</span>
+          <h3 class="font-serif text-2xl font-normal tracking-tight">The Danta Ethos</h3>
+          <p class="text-parchment/60 text-sm leading-relaxed font-light">Named after the endangered Central American tapir—the forest's silent gardener—our bar stands as a tribute to the uncelebrated labor of agricultural stewardship.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIGNATURES (Parchment Dark) -->
+  <section id="signatures" class="bg-parchmentDark border-b border-espresso/15 reveal-on-scroll">
+    <div class="py-36 md:py-48 max-w-7xl mx-auto px-8 md:px-20">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-24 gap-8">
+        <div>
+          <span class="text-[10px] uppercase tracking-[0.35em] text-terracotta font-light block mb-3">House Expressions</span>
+          <h2 class="font-serif text-4xl md:text-6xl font-normal text-espresso">Signature Iced Creations</h2>
+        </div>
+        <p class="text-roast text-sm max-w-sm font-light leading-relaxed">Guatemalan cardamom and artisanal honeys paired with calibration espresso and house-emulsified creams.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-16">
+        <div class="border-t border-cardamom pt-10 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-baseline mb-4">
+              <span class="text-[9px] uppercase tracking-[0.3em] font-medium text-cardamom">Cardamom Infused</span>
+              <span class="font-serif text-2xl font-normal text-espresso">€6.90</span>
+            </div>
+            <h3 class="font-serif text-3xl font-normal text-espresso">
+              <button type="button" data-spec="honey-pistachio" class="spec-trigger transition duration-500">Honey Pistachio Cardamom Latte</button>
+            </h3>
+            <p class="text-roast text-sm mt-4 font-light leading-relaxed">Raw honey, roasted pistachio, and authentic Guatemalan cardamom finished with vanilla emulsion and crushed nuts.</p>
+          </div>
+          <span class="text-[9px] uppercase tracking-[0.3em] text-roast/70 mt-16 block">Served Iced · Specs +</span>
+        </div>
+
+        <div class="border-t border-mayaGold pt-10 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-baseline mb-4">
+              <span class="text-[9px] uppercase tracking-[0.3em] font-medium text-terracotta">House Selection</span>
+              <span class="font-serif text-2xl font-normal text-espresso">€6.50</span>
+            </div>
+            <h3 class="font-serif text-3xl font-normal text-espresso">
+              <button type="button" data-spec="vanilla-cheesecake" class="spec-trigger transition duration-500">Vanilla Honey Cheesecake Latte</button>
+            </h3>
+            <p class="text-roast text-sm mt-4 font-light leading-relaxed">Vanilla-infused honey espresso crowned with rich cheesecake cream and textured Lotus Biscoff dust.</p>
+          </div>
+          <span class="text-[9px] uppercase tracking-[0.3em] text-roast/70 mt-16 block">Served Iced · Specs +</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARDAMOM BAND -->
+  <section class="bg-cardamom text-parchment reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-8 md:px-20 py-28 md:py-36 grid md:grid-cols-12 gap-10 items-end">
+      <p class="md:col-span-8 font-serif italic font-light text-4xl md:text-6xl leading-[1.15]">The forest's silent gardener.</p>
+      <p class="md:col-span-4 text-[10px] uppercase tracking-[0.3em] leading-loose border-l border-parchment/30 pl-8">Danta — the Central American tapir, guardian of the highlands.</p>
+    </div>
+  </section>
+
+  <!-- MENU (Parchment) -->
+  <section id="menu" class="py-36 md:py-48 max-w-7xl mx-auto px-8 md:px-20 reveal-on-scroll">
+    <div class="text-center max-w-xl mx-auto mb-28">
+      <span class="text-[10px] uppercase tracking-[0.35em] text-terracotta font-light block mb-3">Complete Offering</span>
+      <h2 class="font-serif text-4xl md:text-6xl font-normal text-espresso">The Catalog</h2>
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-6 mb-24 text-[10px] uppercase tracking-[0.3em]" id="menu-tabs">
+      <button data-tab="all" class="tab-btn font-medium text-terracotta border-b border-terracotta pb-1 transition duration-500">All Items</button>
+      <button data-tab="espresso" class="tab-btn text-roast/60 hover:text-espresso pb-1 transition duration-500">Espresso Bar</button>
+      <button data-tab="iced-coffee" class="tab-btn text-roast/60 hover:text-espresso pb-1 transition duration-500">Iced Coffee</button>
+      <button data-tab="warm-drinks" class="tab-btn text-roast/60 hover:text-espresso pb-1 transition duration-500">Warm & Teas</button>
+      <button data-tab="smoothies-iced" class="tab-btn text-roast/60 hover:text-espresso pb-1 transition duration-500">Smoothies</button>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-20">
+
+      <!-- Espresso -->
+      <div class="menu-category space-y-12" data-category="espresso">
+        <div class="border-b border-roast/40 pb-4 flex items-baseline justify-between">
+          <h3 class="font-serif text-3xl font-normal text-espresso"><button type="button" data-spec="cat-espresso" class="spec-trigger transition duration-500">Espresso Bar (Warm)</button></h3>
+          <span class="text-[9px] uppercase tracking-[0.3em] text-roast/60 font-light">Specs +</span>
+        </div>
+        <div>
+          <p class="text-[9px] uppercase tracking-[0.3em] text-terracotta font-medium mb-6">Pure Espresso</p>
+          <ul class="space-y-6 text-sm font-light">
+            <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><span>Espresso</span><span class="font-serif text-lg">€3.00</span></li>
+            <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><span>Americano / Long Black</span><span class="font-serif text-lg">€3.80</span></li>
+            <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><span>Doppio</span><span class="font-serif text-lg">€3.80</span></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-[9px] uppercase tracking-[0.3em] text-terracotta font-medium mb-6">With Milk</p>
+          <ul class="space-y-6 text-sm font-light">
+            <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><span>Espresso Macchiato</span><span class="font-serif text-lg">€3.30</span></li>
+            <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><span>Cortado</span><span class="font-serif text-lg">€3.80</span></li>
+            <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><span>Flat White</span><span class="font-serif text-lg">€4.20</span></li>
+            <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><span>Cappuccino</span><span class="font-serif text-lg">€4.20</span></li>
+            <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><span>Latte Macchiato</span><span class="font-serif text-lg">€4.20</span></li>
+            <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><span>Latte</span><span class="font-serif text-lg">€4.20</span></li>
+            <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><div><span>Cinnamon Latte</span><span class="block text-xs text-roast/70 mt-0.5">Cinnamon & honey</span></div><span class="font-serif text-lg">€4.80</span></li>
+            <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><span>Mocha</span><span class="font-serif text-lg">€5.00</span></li>
+            <li class="flex justify-between items-baseline border-b border-espresso/10 border-l border-l-cardamom pl-4 pb-3"><div><span class="font-medium text-espresso">Cardamom Latte ★</span><span class="block text-xs text-cardamom mt-0.5">Cardamom & honey</span></div><span class="font-serif text-lg">€5.00</span></li>
+            <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><span>Dirty Chai</span><span class="font-serif text-lg">€5.40</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Iced Coffee -->
+      <div class="menu-category space-y-12" data-category="iced-coffee">
+        <div class="border-b border-roast/40 pb-4 flex items-baseline justify-between">
+          <h3 class="font-serif text-3xl font-normal text-espresso"><button type="button" data-spec="cat-iced" class="spec-trigger transition duration-500">Iced Coffee & Frappes</button></h3>
+          <span class="text-[9px] uppercase tracking-[0.3em] text-roast/60 font-light">Specs +</span>
+        </div>
+        <ul class="space-y-6 text-sm font-light">
+          <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><span>Iced Americano</span><span class="font-serif text-lg">€4.00</span></li>
+          <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><div><span>Iced Latte</span><span class="block text-xs text-roast/70 mt-0.5">Optional honey</span></div><span class="font-serif text-lg">€4.50</span></li>
+          <li class="flex justify-between items-baseline border-b border-espresso/10 border-l border-l-mayaGold pl-4 pb-3"><div><span class="font-medium text-espresso">★ Honey Blended Coffee</span><span class="block text-xs text-terracotta mt-0.5">Barista favorite</span></div><span class="font-serif text-lg">€5.20</span></li>
+          <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><span>Iced Mocha</span><span class="font-serif text-lg">€5.30</span></li>
+          <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><span>Iced Dirty Chai</span><span class="font-serif text-lg">€5.70</span></li>
+          <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><span>Dark Chocolate Frappe</span><span class="font-serif text-lg">€5.80</span></li>
+          <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><span>White Chocolate Frappe</span><span class="font-serif text-lg">€5.80</span></li>
+          <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><div><button type="button" data-spec="vanilla-cheesecake" class="spec-trigger">Vanilla Honey Cheesecake Latte</button><span class="block text-xs text-roast/70 mt-0.5">Cheesecake cream & Biscoff</span></div><span class="font-serif text-lg">€6.50</span></li>
+          <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><div><button type="button" data-spec="honey-pistachio" class="spec-trigger">Honey Pistachio Cardamom Latte</button><span class="block text-xs text-roast/70 mt-0.5">Vanilla cream & pistachios</span></div><span class="font-serif text-lg">€6.90</span></li>
+        </ul>
+      </div>
+
+      <!-- Warm Drinks -->
+      <div class="menu-category space-y-12" data-category="warm-drinks">
+        <div class="border-b border-roast/40 pb-4 flex items-baseline justify-between">
+          <h3 class="font-serif text-3xl font-normal text-espresso"><button type="button" data-spec="cat-warm" class="spec-trigger transition duration-500">Warm Drinks & Spices</button></h3>
+          <span class="text-[9px] uppercase tracking-[0.3em] text-roast/60 font-light">Specs +</span>
+        </div>
+        <ul class="space-y-6 text-sm font-light">
+          <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><span>Dark Hot Chocolate</span><span class="font-serif text-lg">€4.80</span></li>
+          <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><span>White Hot Chocolate</span><span class="font-serif text-lg">€4.80</span></li>
+          <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><div><span>Sweet Cinnamon Dark Hot Chocolate</span><span class="block text-xs text-roast/70 mt-0.5">Dark chocolate, cinnamon & honey</span></div><span class="font-serif text-lg">€5.20</span></li>
+          <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><span>Chai Latte</span><span class="font-serif text-lg">€4.80</span></li>
+          <li class="flex justify-between items-baseline border-b border-espresso/10 border-l border-l-cardamom pl-4 pb-3"><div><span class="font-medium text-espresso">Golden Chai Latte ★</span><span class="block text-xs text-cardamom mt-0.5">Turmeric, cardamom, cinnamon</span></div><span class="font-serif text-lg">€5.20</span></li>
+          <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><span>Matcha Latte</span><span class="font-serif text-lg">€5.20</span></li>
+          <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><div><span>Sweet London Fog</span><span class="block text-xs text-roast/70 mt-0.5">Earl Grey, vanilla syrup, honey & milk</span></div><span class="font-serif text-lg">€4.80</span></li>
+          <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><span>Earl Grey Tea</span><span class="font-serif text-lg">€3.80</span></li>
+          <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><span>Herbal Tea (Sweet Mint)</span><span class="font-serif text-lg">€4.00</span></li>
+          <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><span>Fruit Tea</span><span class="font-serif text-lg">€4.00</span></li>
+        </ul>
+      </div>
+
+      <!-- Smoothies -->
+      <div class="menu-category space-y-12" data-category="smoothies-iced">
+        <div class="border-b border-roast/40 pb-4 flex items-baseline justify-between">
+          <h3 class="font-serif text-3xl font-normal text-espresso"><button type="button" data-spec="cat-smoothies" class="spec-trigger transition duration-500">Smoothies & Refreshers</button></h3>
+          <span class="text-[9px] uppercase tracking-[0.3em] text-roast/60 font-light">Specs +</span>
+        </div>
+        <div>
+          <p class="text-[9px] uppercase tracking-[0.3em] text-terracotta font-medium mb-6">Fresh Smoothies (Yogurt / Plant-based)</p>
+          <ul class="space-y-6 mb-10 text-sm font-light">
+            <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><div><span>Green Smoothie</span><span class="block text-xs text-roast/70 mt-0.5">Avocado, spinach, mango & banana</span></div><span class="font-serif text-lg">€5.80</span></li>
+            <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><div><span>Yellow Smoothie</span><span class="block text-xs text-roast/70 mt-0.5">Mango, pineapple & banana</span></div><span class="font-serif text-lg">€5.80</span></li>
+            <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><div><span>Pink Smoothie</span><span class="block text-xs text-roast/70 mt-0.5">Strawberry, blueberry, raspberry & banana</span></div><span class="font-serif text-lg">€5.80</span></li>
+            <li class="text-xs text-roast border-l border-mayaGold pl-4 py-1"><strong class="text-espresso">Add-ons:</strong> +Oats (€0.50) • +Protein (€1.00)</li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-[9px] uppercase tracking-[0.3em] text-terracotta font-medium mb-6">Iced Non-Coffee</p>
+          <ul class="space-y-6 text-sm font-light">
+            <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><span>Iced Chai Latte</span><span class="font-serif text-lg">€5.10</span></li>
+            <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><span>Iced Matcha Latte</span><span class="font-serif text-lg">€5.50</span></li>
+            <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><div><span>Dark & White Choco Blended</span><span class="block text-xs text-roast/70 mt-0.5">Blended with ice and milk</span></div><span class="font-serif text-lg">€5.80</span></li>
+            <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><span>Homemade Iced Tea</span><span class="font-serif text-lg">€4.20</span></li>
+            <li class="flex justify-between items-baseline border-b border-espresso/10 pb-3"><span>Homemade Lemonade</span><span class="font-serif text-lg">€4.40</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-20 bg-espresso text-parchment/80 py-6 px-8 flex flex-wrap items-center justify-center gap-12 text-[10px] uppercase tracking-[0.3em] font-medium">
+      <span class="font-serif italic text-mayaGold normal-case tracking-normal text-base">Customizations:</span>
+      <span>Extra Shot: +€0.50</span>
+      <span>Oat Milk: +€0.50</span>
+      <span>Whipped Cream: +€0.50</span>
+    </div>
+  </section>
+
+  <!-- VISIT (Parchment Dark) -->
+  <section id="visit" class="bg-parchmentDark border-t border-espresso/15 reveal-on-scroll">
+    <div class="py-36 md:py-48 max-w-7xl mx-auto px-8 md:px-20">
+      <div class="grid lg:grid-cols-2 gap-24 items-start">
+        <div class="space-y-10">
+          <span class="text-[10px] uppercase tracking-[0.35em] text-terracotta font-light block">Location & Hours</span>
+          <h2 class="font-serif text-4xl md:text-6xl font-normal text-espresso">Visit Danta's in Leuven</h2>
+          <p class="text-roast text-base leading-relaxed font-light">Whether stopping by for a morning extraction or an unhurried afternoon cardamom brew, our doors are open daily.</p>
+          <div class="space-y-6 text-sm font-light pt-4 border-t border-roast/30">
+            <div>
+              <strong class="block text-cardamom uppercase tracking-[0.25em] text-[9px] mb-1 font-medium">Address</strong>
+              <div class="flex items-baseline gap-6 flex-wrap">
+                <span id="address-text">Rector de Somerplein 15, 3000 Leuven, Belgium</span>
+                <button id="copy-address" type="button" aria-label="Copy address to clipboard"
+                  class="text-[9px] uppercase tracking-[0.3em] font-medium text-roast border-b border-espresso/30 pb-0.5 hover:text-terracotta hover:border-terracotta transition duration-500">
+                  <span id="copy-label">Copy</span>
+                </button>
+              </div>
+            </div>
+            <div>
+              <strong class="block text-cardamom uppercase tracking-[0.25em] text-[9px] mb-1 font-medium">Hours</strong>
+              Monday – Sunday: 10:00 AM – 7:30 PM
+            </div>
+            <div>
+              <strong class="block text-cardamom uppercase tracking-[0.25em] text-[9px] mb-1 font-medium">Social</strong>
+              <a href="https://instagram.com/dantas_coffee" target="_blank" rel="noopener" class="underline underline-offset-4 hover:text-terracotta transition duration-500">Instagram: @dantas_coffee</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="space-y-8 border-l border-roast/30 pl-10 md:pl-16" onsubmit="event.preventDefault(); alert('Message transmitted successfully.');">
+          <h3 class="font-serif text-3xl font-normal text-espresso mb-4">Direct Inquiry</h3>
+          <div>
+            <label class="block text-[9px] uppercase tracking-[0.3em] font-medium text-roast mb-2">Name</label>
+            <input type="text" required class="w-full pb-3 bg-transparent border-b border-roast/30 text-sm focus:outline-none focus:border-terracotta transition duration-500 rounded-none" />
+          </div>
+          <div>
+            <label class="block text-[9px] uppercase tracking-[0.3em] font-medium text-roast mb-2">Email</label>
+            <input type="email" required class="w-full pb-3 bg-transparent border-b border-roast/30 text-sm focus:outline-none focus:border-terracotta transition duration-500 rounded-none" />
+          </div>
+          <div>
+            <label class="block text-[9px] uppercase tracking-[0.3em] font-medium text-roast mb-2">Message</label>
+            <textarea rows="3" required class="w-full pb-3 bg-transparent border-b border-roast/30 text-sm focus:outline-none focus:border-terracotta transition duration-500 rounded-none"></textarea>
+          </div>
+          <button type="submit" class="text-[10px] uppercase tracking-[0.3em] font-medium text-espresso border-b border-espresso pb-1 hover:text-terracotta hover:border-terracotta transition duration-500 pt-4">
+            Transmit Message →
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (Espresso) -->
+  <footer class="bg-espresso text-parchment/60 py-16 border-t border-mayaGold text-[10px] uppercase tracking-[0.3em]">
+    <div class="max-w-7xl mx-auto px-8 md:px-20 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div><strong class="text-parchment font-serif text-sm font-normal normal-case tracking-normal">Danta's Coffee</strong> — Rector de Somerplein 15, Leuven</div>
+      <div class="flex items-center gap-12">
+        <a href="https://instagram.com/dantas_coffee" target="_blank" rel="noopener" class="hover:text-parchment transition duration-500">Instagram</a>
+        <span class="text-mayaGold font-medium">Bespoke €500 Project</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SPECS DRAWER (body level) -->
+  <div id="spec-backdrop" class="fixed inset-0 z-[60] bg-espresso/40" aria-hidden="true"></div>
+  <aside id="spec-drawer" role="dialog" aria-modal="true" aria-labelledby="spec-title"
+    class="fixed top-0 right-0 z-[70] h-full w-full max-w-md bg-parchment border-l border-espresso/20 overflow-y-auto">
+    <div class="px-10 py-10 flex items-center justify-between border-b border-espresso/10">
+      <span class="text-[9px] uppercase tracking-[0.35em] text-terracotta font-light">Terroir & Brew Specs</span>
+      <button id="spec-close" type="button" class="text-[9px] uppercase tracking-[0.3em] font-medium text-espresso border-b border-espresso pb-0.5 hover:text-terracotta hover:border-terracotta transition duration-500">Close ✕</button>
+    </div>
+    <div class="px-10 py-14 space-y-14">
+      <div>
+        <span id="spec-kicker" class="text-[9px] uppercase tracking-[0.3em] font-medium text-cardamom block mb-4"></span>
+        <h3 id="spec-title" class="font-serif text-4xl font-normal leading-tight text-espresso"></h3>
+        <p id="spec-desc" class="text-roast text-sm font-light leading-relaxed mt-6"></p>
+      </div>
+      <dl class="border-t border-espresso/15 text-sm font-light">
+        <div class="flex justify-between gap-6 py-5 border-b border-espresso/10"><dt class="text-[9px] uppercase tracking-[0.3em] font-medium text-espresso">Tasting Notes</dt><dd id="spec-notes" class="text-right text-roast max-w-[60%]"></dd></div>
+        <div class="flex justify-between gap-6 py-5 border-b border-espresso/10"><dt class="text-[9px] uppercase tracking-[0.3em] font-medium text-espresso">Altitude</dt><dd id="spec-altitude" class="font-serif text-lg text-espresso"></dd></div>
+        <div class="flex justify-between gap-6 py-5 border-b border-espresso/10"><dt class="text-[9px] uppercase tracking-[0.3em] font-medium text-espresso">Roast Profile</dt><dd id="spec-roast" class="text-right text-roast max-w-[60%]"></dd></div>
+        <div class="flex justify-between gap-6 py-5 border-b border-espresso/10"><dt class="text-[9px] uppercase tracking-[0.3em] font-medium text-espresso">Origin</dt><dd id="spec-origin" class="text-right text-roast max-w-[60%]"></dd></div>
+      </dl>
+      <p id="spec-note" class="font-serif italic text-terracotta text-base"></p>
+    </div>
+  </aside>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
